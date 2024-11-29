@@ -32,7 +32,7 @@ public class UIDemo extends BaseWindows {
 
     public static void main(String[] args) {
         final long l = System.currentTimeMillis();
-        final UIDemo ui = ApplicationLauncher.run(UIDemo.class);
+        final UIDemo ui = ApplicationLauncher.run(UIDemo.class,"标题");
         //com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatGitHubContrastIJTheme.setup();
         logger.info("启动耗时：{}",System.currentTimeMillis()-l);
         ui.getJf().setVisible(true);
